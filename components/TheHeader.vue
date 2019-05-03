@@ -203,6 +203,7 @@ export default {
       li{
         position: relative;
         padding: 0 1.2em;
+        z-index: 1;
 
         &:after{
           content: "";
@@ -240,6 +241,7 @@ export default {
             left: 1px;
             transition: width .2s ease-in;
             z-index: 0;
+            pointer-events: none;
           }
           
           &:hover{
