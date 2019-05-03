@@ -204,7 +204,7 @@ export default {
         position: relative;
         padding: 0 1.2em;
 
-        /* &:after{
+        &:after{
           content: "";
           height: 1.4rem;
           width: 1px;
@@ -216,7 +216,7 @@ export default {
         }
         &:last-child:after{
           display: none;
-        } */
+        }
 
         a{
           color: inherit;
@@ -230,7 +230,7 @@ export default {
             font-size: 1.5rem;
           }
 
-          /* &:after{
+          &:after{
             content: "";
             height: 3px;
             width: 0%;
@@ -246,16 +246,16 @@ export default {
             &:after{
               width: 50%;
             }
-          } */
+          }
         }
 
-        /* .nuxt-link-exact-active{
+        .nuxt-link-exact-active{
 
           &:after{
             width: 50%;
           }
 
-        } */
+        }
 
       }
       
