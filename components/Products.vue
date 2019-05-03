@@ -6,106 +6,105 @@
                 <!-- <p class="opc-7">Her kan du finde vores mest populærer vare</p> -->
             </div>
             <div class="products-wrapper">
-                <nuxt-link class="products__item" to="/">
-                    <div class="products__item__image-wrapper">
+                <div class="products__item">
+                    <nuxt-link class="products__item__image-wrapper" to="/">
                         <img src="../assets/images/p-img-1.jpg" alt="" />
-                    </div>
+                    </nuxt-link>
                     <div class="products__item__content">
-                        <p class="heading">3M 8810 Sikkerhedsmaske mod partikler (3 stk i pakken)</p>
+                        <nuxt-link class="heading" to="/">3M 8810 Sikkerhedsmaske mod partikler (3 stk i pakken)</nuxt-link>
                         <div class="products__item__content__bottom">
                             <span class="price">20,00 <small>Kr</small></span>
-                            <div class="btn btn--primary basket">Tilføj kurv <span class="icon"></span></div>
+                            <nuxt-link class="btn btn--primary basket" to="/">Tilføj kurv <span class="icon"></span></nuxt-link>
                         </div>
                     </div>
-                </nuxt-link>
-                <nuxt-link class="products__item" to="/">
-                    <div class="products__item__image-wrapper">
+                </div>
+                <div class="products__item">
+                    <nuxt-link class="products__item__image-wrapper" to="/">
                         <img src="../assets/images/p-img-2.jpg" alt="" />
-                    </div>
+                    </nuxt-link>
                     <div class="products__item__content">
-                        <p class="heading">AluZink Bøjning Ø87 mm 70°</p>
+                        <nuxt-link class="heading" to="/">AluZink Bøjning Ø87 mm 70°</nuxt-link>
                         <div class="products__item__content__bottom">
                             <span class="price">45,00 <small>Kr</small></span>
-                            <div class="btn btn--primary basket">Tilføj kurv <span class="icon"></span></div>
+                            <nuxt-link class="btn btn--primary basket" to="/">Tilføj kurv <span class="icon"></span></nuxt-link>
                         </div>
                     </div>
-                </nuxt-link>
-                <nuxt-link class="products__item" to="/">
-                    <div class="products__item__image-wrapper">
+                </div>
+                <div class="products__item">
+                    <nuxt-link class="products__item__image-wrapper" to="/">
                         <img src="../assets/images/p-img-3.jpg" alt="" />
-                    </div>
+                    </nuxt-link>
                     <div class="products__item__content">
-                        <p class="heading">Ståltrapez TP19 – Bestil på mål (Bestillingskøb)</p>
+                        <nuxt-link class="heading" to="/">Ståltrapez TP19 – Bestil på mål (Bestillingskøb)</nuxt-link>
                         <div class="products__item__content__bottom">
                             <span class="price">Fra 0,85 <small>Kr</small>
                                 <span>pr. cm. inkl. moms.</span>
                             </span>
-                            <div class="btn btn--primary basket">Tilføj kurv <span class="icon"></span></div>
+                            <nuxt-link class="btn btn--primary basket" to="/">Tilføj kurv <span class="icon"></span></nuxt-link>
                         </div>
                     </div>
-                </nuxt-link>
-                <nuxt-link class="products__item" to="/">
-                    <div class="products__item__image-wrapper">
-                        <img src="../assets/images/p-img-4.jpg" alt="" />
-                    </div>
+                </div>
+                <div class="products__item">
+                    <nuxt-link class="products__item__image-wrapper" to="/">
+                        <img src="../assets/images/p-img-4.jpg"  alt="" />
+                    </nuxt-link>
                     <div class="products__item__content">
-                        <p class="heading">AluZink brøndkrave Ø87/150 mm</p>
+                        <nuxt-link class="heading" to="/">AluZink brøndkrave Ø87/150 mm</nuxt-link>
                         <div class="products__item__content__bottom">
                             <span class="price">100,00 <small>Kr</small></span>
-                            <div class="btn btn--primary basket">Tilføj kurv <span class="icon"></span></div>
+                            <nuxt-link class="btn btn--primary basket" to="/">Tilføj kurv <span class="icon"></span></nuxt-link>
                         </div>
                     </div>
-                </nuxt-link>
-                <nuxt-link class="products__item" to="/">
-                    <div class="products__item__image-wrapper">
+                </div>
+                <div class="products__item">
+                    <nuxt-link class="products__item__image-wrapper" to="/">
                         <img src="https://www.profilmetal.dk/wp-content/uploads/skumklods-tp20-295x250.jpg" alt="" />
-                    </div>
+                    </nuxt-link>
                     <div class="products__item__content">
-                        <p class="heading">AluZink brøndkrave Ø87/150 mm</p>
+                        <nuxt-link class="heading" to="/">AluZink brøndkrave Ø87/150 mm</nuxt-link>
                         <div class="products__item__content__bottom">
                             <span class="price">100,00 <small>Kr</small></span>
-                            <div class="btn btn--primary basket">Tilføj kurv <span class="icon"></span></div>
+                            <nuxt-link class="btn btn--primary basket" to="/">Tilføj kurv <span class="icon"></span></nuxt-link>
                         </div>
                     </div>
-                </nuxt-link>
-                <nuxt-link class="products__item" to="/">
-                    <div class="products__item__image-wrapper">
+                </div>
+                <div class="products__item">
+                    <nuxt-link class="products__item__image-wrapper" to="/">
                         <img src="https://www.profilmetal.dk/wp-content/uploads/Trapezplade-TP20-Sort-295x241.jpg" alt="" />
-                    </div>
+                    </nuxt-link>
                     <div class="products__item__content">
-                        <p class="heading">AluZink brøndkrave Ø87/150 mm</p>
+                        <nuxt-link class="heading" to="/">AluZink brøndkrave Ø87/150 mm</nuxt-link>
                         <div class="products__item__content__bottom">
                             <span class="price">100,00 <small>Kr</small></span>
-                            <div class="btn btn--primary basket">Tilføj kurv <span class="icon"></span></div>
+                            <nuxt-link class="btn btn--primary basket" to="/">Tilføj kurv <span class="icon"></span></nuxt-link>
                         </div>
                     </div>
-                </nuxt-link>
-                <nuxt-link class="products__item" to="/">
-                    <div class="products__item__image-wrapper">
+                </div>
+                <div class="products__item">
+                    <nuxt-link class="products__item__image-wrapper" to="/">
                         <img src="https://www.profilmetal.dk/wp-content/uploads/montageskrue-selvborende-4-8x35mm.jpg" alt="" />
-                    </div>
+                    </nuxt-link>
                     <div class="products__item__content">
-                        <p class="heading">AluZink brøndkrave Ø87/150 mm</p>
+                        <nuxt-link class="heading" to="/">AluZink brøndkrave Ø87/150 mm</nuxt-link>
                         <div class="products__item__content__bottom">
                             <span class="price">100,00 <small>Kr</small></span>
-                            <div class="btn btn--primary basket">Tilføj kurv <span class="icon"></span></div>
+                            <nuxt-link class="btn btn--primary basket" to="/">Tilføj kurv <span class="icon"></span></nuxt-link>
                         </div>
                     </div>
-                </nuxt-link>
-                <nuxt-link class="products__item" to="/">
-                    <div class="products__item__image-wrapper">
+                </div>
+                <div class="products__item">
+                    <nuxt-link class="products__item__image-wrapper" to="/">
                         <img src="https://www.profilmetal.dk/wp-content/uploads/endebund-295x250.jpg" alt="" />
-                    </div>
+                    </nuxt-link>
                     <div class="products__item__content">
-                        <p class="heading">AluZink brøndkrave Ø87/150 mm</p>
+                        <nuxt-link class="heading" to="/">AluZink brøndkrave Ø87/150 mm</nuxt-link>
                         <div class="products__item__content__bottom">
                             <span class="price">100,00 <small>Kr</small></span>
-                            <div class="btn btn--primary basket">Tilføj kurv <span class="icon"></span></div>
+                            <nuxt-link class="btn btn--primary basket" to="/">Tilføj kurv <span class="icon"></span></nuxt-link>
                         </div>
                     </div>
-                </nuxt-link>
+                </div>
             </div>
-            
         </div>
     </section>
 </template>
@@ -168,6 +167,7 @@ export default {
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                color: $dark-gray-dark;
             }
 
             &__bottom{
@@ -202,6 +202,10 @@ export default {
                     display: flex;
                     align-items: center;
                     justify-content: center;
+                    &:hover{
+                        background-color: $dark-gray-light;
+                        border-color: $dark-gray-light;
+                    }
 
                     .icon{
                         background-image: url('../assets/images/basket-light.svg') ;
