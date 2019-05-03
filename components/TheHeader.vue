@@ -244,11 +244,11 @@ export default {
             pointer-events: none;
           }
           
-          &:hover{
+          /* &:hover{
             &:after{
               width: 50%;
             }
-          }
+          } */
         }
 
         .nuxt-link-exact-active{
