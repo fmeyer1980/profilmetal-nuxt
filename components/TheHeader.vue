@@ -199,16 +199,12 @@ export default {
           transform: skewX(35deg);
           box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.08);
       }
-      /* clip-path: polygon(0% 0%, 94% 0%, 100% 100%, 6% 100%); */
-
-      
 
       li{
         position: relative;
         padding: 0 1.2em;
-        z-index: 1;
 
-        &:after{
+        /* &:after{
           content: "";
           height: 1.4rem;
           width: 1px;
@@ -220,7 +216,7 @@ export default {
         }
         &:last-child:after{
           display: none;
-        }
+        } */
 
         a{
           color: inherit;
@@ -228,12 +224,13 @@ export default {
           text-transform: uppercase;
           position: relative;
           font-size: 1.6rem;
-          height: 100%;;
+          height: 100%;
+          z-index: 99;
           @media (max-width: $screen-lg) {
             font-size: 1.5rem;
           }
 
-          &:after{
+          /* &:after{
             content: "";
             height: 3px;
             width: 0%;
@@ -242,22 +239,23 @@ export default {
             bottom: -4px;
             left: 1px;
             transition: width .2s ease-in;
+            z-index: 0;
           }
           
           &:hover{
             &:after{
               width: 50%;
             }
-          }
+          } */
         }
 
-        .nuxt-link-exact-active{
+        /* .nuxt-link-exact-active{
 
           &:after{
             width: 50%;
           }
 
-        }
+        } */
 
       }
       
