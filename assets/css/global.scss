@@ -120,23 +120,3 @@ a{
     opacity: .5;
   }
 }
-
-.section-heading{
-  text-align: center;
-
-  .title{
-    position: relative;
-    text-transform: uppercase;
-    font-weight: 700;
-    &:after{
-      content: "";
-      width: 5rem;
-      height: 3px;
-      background-color: $dark-gray-light;
-      position: absolute;
-      left: 50%;
-      bottom: -1.5rem;
-      transform: translate(-50%);
-    }
-  } 
-}

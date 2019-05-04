@@ -15,7 +15,7 @@
         <ul class="top-menu">
           <li><nuxt-link to="/">Om os</nuxt-link></li>
           <li><nuxt-link to="/about">Kundeservice</nuxt-link></li>
-          <li><nuxt-link to="/cases">Kontakt os</nuxt-link></li>
+          <li><nuxt-link to="/cases">Kontakt</nuxt-link></li>
         </ul>
       </div>
     </div>
@@ -164,6 +164,7 @@ export default {
       position: relative;
       flex-shrink: 1;
       flex-grow: 1;
+      width: 50%;
       &:before{
           position: absolute;
           content: "";
@@ -190,22 +191,9 @@ export default {
 
     .nav-scroll{
       width: 100%;
-      
-    }
-
-    .main-menu{
       position: relative;
-      @include list-style-none;
-      display: flex;
-      background-color: transparent;
-      height: 9rem;
-      align-items: center;
-      padding: 0 5rem 0 4rem;
-      @media (max-width: 1024px) {
-        padding: 0 4rem 0 3rem;
-      }
-
-       &:after{
+           
+      &:after{
           position: absolute;
           content: "";
           background: $white;
@@ -217,14 +205,46 @@ export default {
           transform: skewX(35deg);
           box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.08);
       }
+    }
+
+    
+
+    .main-menu{
+
+      @include list-style-none;
+      display: flex;
+      /* justify-content: space-between; */
+      background-color: transparent;
+      height: 9rem;
+      align-items: center;
+      margin: 0 5rem 0 4rem;
+      width: 90%;
+      overflow-x: scroll;
+      scroll-snap-type: x proximity;
+
+      @media (max-width: $screen-lg) {
+        margin: 0 4rem 0 3rem;
+      }
+
+      &:before{
+        position: absolute;
+        top: 0;
+        right: 4rem;
+        content: "";
+        width: 5rem;
+        height: 9rem;
+        background-image: linear-gradient(to right, rgba($white, 0), $white);
+        z-index: 2;
+      }
 
       li{
         position: relative;
-        padding: 0 1.2em;
-        @media (max-width: 1024px) {
+        padding: 0 1.3em;
+        z-index: 1;
+
+        @media (max-width: $screen-lg) {
           padding: 0 1em;
         }
-        z-index: 1;
 
         &:after{
           content: "";
@@ -233,7 +253,7 @@ export default {
           background-color: rgba($black, 0.1);
           position: absolute;
           top: 50%;
-          right: 0;
+          right: 0%;
           transform: translateY(-50%);
         }
         &:last-child:after{
@@ -306,13 +326,13 @@ export default {
         transform: skewX(35deg);
         background-color: $light-gray-light;
         transition: opacity .2s ease-in;
-        width: calc(100% - 34rem);
+        width: calc(100% - 33rem);
         position: absolute;
         border: none;
         height: 100%;
         z-index: 999;
         top: 0;
-        right: 17rem;
+        right: 16rem;
         opacity: 0;
         backface-visibility: hidden;
         pointer-events: none;
@@ -347,15 +367,18 @@ export default {
     .basket{
       position: relative;
       height: 100%;
-      width: 10rem;
+      width: 6rem;
       border-left: solid 1px;
-      border-right: solid 1px;
       border-color: rgba($black, .08);
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-end;
       margin-right: 0;
       flex-shrink: 0;
+      cursor: pointer;
+      img{
+        margin-right: .6rem;
+        }
 
       &__amount{
         position: absolute;
@@ -368,9 +391,10 @@ export default {
         border-radius: 1rem;
         color: $light-gray-light;
         font-size: 1.2rem;
-        margin-top: -2rem;
-        margin-right: -2rem;
+        top: 30%;
+        right: 0;
         border: solid 2px $light-gray-light;
+        
       }
     }
 

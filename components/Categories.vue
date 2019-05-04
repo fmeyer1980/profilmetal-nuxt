@@ -1,7 +1,7 @@
 <template>
     <section class="categories">
         <div class="container">
-                <carousel :perPageCustom="[[320, 1], [576, 2], [960, 3]]" :centerMode="true">
+                <carousel :perPageCustom="[[320, 1], [576, 2], [960, 3]]" :navigationEnabled="true" :navigationNextLabel="s" :navigationPrevLabel="s">
                     <slide>
                         <div class="categories__item">
                             <img class="categories__item__image" src="~/assets/images/category-img-1.jpg" />
@@ -61,41 +61,51 @@
 
     > div{
         position: relative;
+        z-index: 2;
     }
    
     .VueCarousel{
         width: calc(100% - 14.1rem);
-         
 
         .VueCarousel-pagination{
+            display: none;
+        }
+
+        .VueCarousel-navigation{
             height: 26rem;
             position: absolute;
             top: 0;
             right: -14rem;
             width: 14rem;
+            display: flex;
 
-            .VueCarousel-dot-container{
-                height: 100% !important;;
-                margin: 0 !important;
-                display: flex;
+            &--disabled{
+                background-color: $dark-gray-light !important;
+                opacity: .6 !important;
+                
+                &:after{
+                    opacity: .3;
+                }
             }
 
-            .VueCarousel-dot{
+            &-button{
                 position: relative;
-                width: 50% !important;;
-                height: 100% !important;;
-                background-color: rgba($black, .1) !important;
+                width: 50% !important;
+                height: 100% !important;
+                background-color: $primary;
                 margin: 0 !important;
                 padding: 0 !important;
                 border-radius: 0;
-                opacity: .5;
-                &--active{
-                    background-color: $dark-gray-light !important;
-                    opacity: 1;
-                }
+                opacity: 1;
+                overflow: hidden;
+                text-indent: 40rem;
+                top: 0;
+                left: auto;
+                transform: translateY(0);
+                transform: translateX(0);
+
                 &:after{
                     content: "";
-                    background-image: url('../assets/images/arrow-light.svg');
                     background-repeat: no-repeat;
                     background-size: 10px;
                     width: 20px;
@@ -105,11 +115,22 @@
                     left: 50%;
                     transform: translate(-50%)
                 }
-                &:last-child:after{
-                    background-image: url('../assets/images/arrow-light-right.svg');
-                    
+            }
+
+            &-prev{
+                &:after{
+                    background-image: url('../assets/images/arrow-light.svg');
                 }
             }
+
+            &-next{
+                &:after{
+                    background-image: url('../assets/images/arrow-light-right.svg');
+                }
+                
+            }
+
+            
         }
     }
 
@@ -133,6 +154,7 @@
   &__item{
       width: 100%;
       padding-right: $gutter;
+      padding-bottom: 1px;
 
       img{
           width: 100%;

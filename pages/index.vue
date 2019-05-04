@@ -4,6 +4,7 @@
     <Categories />
     <Offers />
     <Products />
+    <AboutUs />
   </div>
 </template>
 
@@ -12,13 +13,15 @@ import Hero from '~/components/Hero.vue'
 import Categories from '~/components/Categories.vue'
 import Offers from '~/components/Offers.vue'
 import Products from '~/components/Products.vue'
+import AboutUs from '~/components/AboutUs.vue'
 
 export default {
   components: {
     Hero,
     Categories,
     Offers,
-    Products
+    Products,
+    AboutUs
   },
   metaInfo: {
     title: 'Welcome to my blog'

@@ -1,10 +1,7 @@
 <template>
     <section class="products pt-7 pb-7">
         <div class="container">
-            <div class="section-heading mb-7">
-                <h2 class="title h3">Populære vare lige nu</h2>
-                <!-- <p class="opc-7">Her kan du finde vores mest populærer vare</p> -->
-            </div>
+            <SectionHeading heading="Populære vare lige nu"/>
             <div class="products-wrapper">
                 <div class="products__item">
                     <nuxt-link class="products__item__image-wrapper" to="/">
@@ -110,8 +107,12 @@
 </template>
 
 <script>
+import SectionHeading from '~/components/SectionHeading.vue'
 
 export default {
+    components: {
+        SectionHeading
+    }
 
 }
 </script>

@@ -17,11 +17,10 @@ export default {
 
 <style>
 
-.page-enter-active {
-  transition: opacity .3s ease-in;
+.page-enter-active, .page-leave-active {
+  transition: opacity .2s ease;
 }
-
-.page-enter {
+.page-enter, .page-leave-to {
   opacity: 0;
 }
 
