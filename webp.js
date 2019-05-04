@@ -1,17 +1,10 @@
-var imagemin = require("imagemin"),    // The imagemin module.
-  webp = require("imagemin-webp"),   // imagemin's WebP plugin.
-  outputFolder = "./assets/images",            // Output folder
-  PNGImages = "./assets/img/*.png",         // PNG images
-  JPEGImages = "./assets/img/*.jpg";        // JPEG images
-
-imagemin([PNGImages], outputFolder, {
-  plugins: [webp({
-      lossless: true // Losslessly encode images
-  })]
-});
-
-imagemin([JPEGImages], outputFolder, {
-  plugins: [webp({
-    quality: 80 // Quality setting from 0 to 100
-  })]
+const imagemin = require('imagemin');
+const imageminWebp = require('imagemin-webp');
+ 
+imagemin(['assets/images/*.{jpg,png}'], 'assets/images', {
+    use: [
+        imageminWebp({quality: 80})
+    ]
+}).then(() => {
+    console.log('Images optimized');
 });
