@@ -12,6 +12,8 @@
   },
   "dependencies": {
     "cross-env": "^5.2.0",
+    "imagemin": "^6.1.0",
+    "imagemin-webp": "^5.0.0",
     "nuxt": "^2.4.0",
     "vue-carousel": "^0.18.0",
     "vue-owl-carousel": "^2.0.3"

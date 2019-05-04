@@ -137,6 +137,8 @@ export default {
 
     &__item{
         color: $dark-gray-dark;
+  
+        transition: all .2s ease-in;
 
         
         
@@ -225,6 +227,7 @@ export default {
         }
 
         &:hover{
+            box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.1);
 
             img{
                 transform: scale(1.05)
