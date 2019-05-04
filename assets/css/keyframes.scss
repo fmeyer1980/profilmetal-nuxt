@@ -1,0 +1,30 @@
+@keyframes FadeFromLeft{
+    from{
+        opacity: 0;
+        transform: translate3d(-5rem, 0, 0)
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0, 0, 0)
+    }
+}
+
+@keyframes FadeFromRight{
+    from{
+        opacity: 0;
+        transform: translate3d(5rem, 0, 0)
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0, 0, 0)
+    }
+}
+
+@keyframes FadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

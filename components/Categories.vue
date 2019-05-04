@@ -1,53 +1,53 @@
 <template>
     <section class="categories">
         <div class="container">
-                <carousel :perPageCustom="[[320, 1], [576, 2], [960, 3]]" :navigationEnabled="true" :navigationNextLabel="s" :navigationPrevLabel="s">
-                    <slide>
-                        <div class="categories__item">
-                            <img class="categories__item__image" src="~/assets/images/category-img-1.jpg" />
-                            <div class="categories__item__content">
-                                <h2 class="heading h3">Ståltagplader</h2>
-                                <p class="opc-7 mt-0 mb-2">Klassiske ståltagplader i forskellige varianter</p>
-                                <!-- <Btn btnType="primary" text="Køb nu" /> -->
-                                <g-link class="btn btn--primary" to="/">Køb nu</g-link>
-                                <g-link class="btn btn--secondary" to="/">læs mere</g-link>
-                            </div>
+            <carousel :perPageCustom="[[320, 1], [576, 2], [960, 3]]" :navigationEnabled="true">
+                <slide>
+                    <div class="categories__item">
+                        <img class="categories__item__image" src="~/assets/images/category-img-1.jpg" />
+                        <div class="categories__item__content">
+                            <h2 class="heading h3">Ståltagplader</h2>
+                            <p class="opc-7 mt-0 mb-2">Klassiske ståltagplader i forskellige varianter</p>
+                            <!-- <Btn btnType="primary" text="Køb nu" /> -->
+                            <g-link class="btn btn--primary" to="/">Køb nu</g-link>
+                            <g-link class="btn btn--secondary" to="/">læs mere</g-link>
                         </div>
-                    </slide>
-                    <slide>
-                        <div class="categories__item">
-                            <img class="categories__item__image" src="~/assets/images/category-img-2.jpg" />
-                            <div class="categories__item__content">
-                                <h2 class="heading h3">Inddækninger</h2>
-                                <p class="opc-7 mt-0 mb-2">Standard- og specialinddækninger til tag…</p>
-                                <g-link class="btn btn--primary" to="/">Køb nu</g-link>
-                                <g-link class="btn btn--secondary" to="/">læs mere</g-link>
-                            </div>
+                    </div>
+                </slide>
+                <slide>
+                    <div class="categories__item">
+                        <img class="categories__item__image" src="~/assets/images/category-img-2.jpg" />
+                        <div class="categories__item__content">
+                            <h2 class="heading h3">Inddækninger</h2>
+                            <p class="opc-7 mt-0 mb-2">Standard- og specialinddækninger til tag…</p>
+                            <g-link class="btn btn--primary" to="/">Køb nu</g-link>
+                            <g-link class="btn btn--secondary" to="/">læs mere</g-link>
                         </div>
-                    </slide>
-                    <slide>
-                        <div class="categories__item">
-                            <img class="categories__item__image" src="~/assets/images/category-img-3.jpg" />
-                            <div class="categories__item__content">
-                                <h2 class="heading h3">Stålfacade</h2>
-                                <p class="opc-7 mt-0 mb-2">Beklæd og beskyt facaden med stærkt stål…</p>
-                                <g-link class="btn btn--primary" to="/">Køb nu</g-link>
-                                <g-link class="btn btn--secondary" to="/">læs mere</g-link>
-                            </div>
+                    </div>
+                </slide>
+                <slide>
+                    <div class="categories__item">
+                        <img class="categories__item__image" src="~/assets/images/category-img-3.jpg" />
+                        <div class="categories__item__content">
+                            <h2 class="heading h3">Stålfacade</h2>
+                            <p class="opc-7 mt-0 mb-2">Beklæd og beskyt facaden med stærkt stål…</p>
+                            <g-link class="btn btn--primary" to="/">Køb nu</g-link>
+                            <g-link class="btn btn--secondary" to="/">læs mere</g-link>
                         </div>
-                    </slide>
-                    <slide>
-                        <div class="categories__item">
-                            <img class="categories__item__image" src="~/assets/images/category-img-1.jpg" />
-                            <div class="categories__item__content">
-                                <h2 class="heading h3">Ståltagplader</h2>
-                                <p class="opc-7 mt-0 mb-2">Klassiske ståltagplader i forskellige varianter</p>
-                                <g-link class="btn btn--primary" to="/">Køb nu</g-link>
-                                <g-link class="btn btn--secondary" to="/">læs mere</g-link>
-                            </div>
+                    </div>
+                </slide>
+                <slide>
+                    <div class="categories__item">
+                        <img class="categories__item__image" src="~/assets/images/category-img-1.jpg" />
+                        <div class="categories__item__content">
+                            <h2 class="heading h3">Ståltagplader</h2>
+                            <p class="opc-7 mt-0 mb-2">Klassiske ståltagplader i forskellige varianter</p>
+                            <g-link class="btn btn--primary" to="/">Køb nu</g-link>
+                            <g-link class="btn btn--secondary" to="/">læs mere</g-link>
                         </div>
-                    </slide>
-                </carousel>
+                    </div>
+                </slide>
+            </carousel>
         </div>
     </section>
 </template>
@@ -163,6 +163,10 @@
       }
 
       &__content{
+
+          .heading{
+              text-transform: none;
+          }
 
           p{
               font-size: 1.8rem;

@@ -1,6 +1,6 @@
 <template>
 <div class="layout">
-  <TopBanner heading="Nye og brugte Tagplader" text="Find dine tagplader her." image="hero-img.jpg" />
+  <TopBanner heading="Facadebeklædning" text="Find dine tagplader her." image="hero-img.jpg" />
     <main>
       <h1>About me</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error doloremque omnis animi, eligendi magni a voluptatum, vitae, consequuntur rerum illum odit fugit assumenda rem dolores inventore iste reprehenderit maxime! Iusto.</p>
@@ -14,11 +14,9 @@ import TopBanner from '~/components/TopBanner.vue'
 
 export default {
   head() {
-    title: "test"
+    title: "Facadebeklædning"
   },
-  metaInfo: {
-    title: 'About me'
-  },
+ 
   components: {
     TopBanner
   }

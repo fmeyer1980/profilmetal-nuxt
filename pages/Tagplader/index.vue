@@ -14,11 +14,9 @@ import TopBanner from '~/components/TopBanner.vue'
 
 export default {
   head() {
-    title: "test"
+    title: "Tagplader"
   },
-  metaInfo: {
-    title: 'About me'
-  },
+ 
   components: {
     TopBanner
   }

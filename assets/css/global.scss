@@ -4,6 +4,7 @@
 @import "type";
 @import "spacing";
 @import "btn";
+@import "keyframes";
 
 $min_width: 320px;
 $max_width: 1400px;
@@ -119,4 +120,8 @@ a{
   &-5{
     opacity: .5;
   }
+}
+
+main{
+  @include container;
 }

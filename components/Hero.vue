@@ -17,6 +17,7 @@
 <script>
 
 export default {
+    
 
 }
 </script>
@@ -62,12 +63,17 @@ export default {
             h1{
                 font-size: 6rem;
                 margin: 0;
-                text-transform: uppercase;
+                animation: FadeFromRight .5s ease;
+                backface-visibility: hidden;
             }
             p{
                 font-size: 2.6rem;
                 margin: 0;
                 font-weight: 400;
+                animation: FadeFromLeft .3s ease;
+                animation-delay: .2s;
+                animation-fill-mode: backwards;
+                backface-visibility: hidden;
             }
         }
 
@@ -76,6 +82,10 @@ export default {
             height: 22rem;
             margin-right: 6rem;
             flex-shrink: 0;
+            animation: FadeIn .5s ease;
+            animation-delay: .6s;
+            animation-fill-mode: backwards;
+            backface-visibility: hidden;
         }
     }
 

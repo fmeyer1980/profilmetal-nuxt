@@ -1,5 +1,5 @@
 <template>
-    <section class="products pt-8 pb-8">
+    <section class="products pt-9 pb-9">
         <div class="container">
             <SectionHeading heading="Populære vare lige nu"/>
             <div class="products-wrapper">

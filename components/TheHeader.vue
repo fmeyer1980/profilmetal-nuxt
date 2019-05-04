@@ -26,7 +26,7 @@
           <div class="nav-scroll">
             <ul class="main-menu">
               <!-- <li><nuxt-link to="/">Forside</nuxt-link></li> -->
-              <li><nuxt-link to="/about">Tagplader</nuxt-link></li>
+              <li><nuxt-link to="/tagplader">Tagplader</nuxt-link></li>
               <li><nuxt-link to="/facadebeklaedning">Facadebeklædning</nuxt-link></li>
               <li><nuxt-link to="/inddaeninger">Inddækninger</nuxt-link></li>
               <li><nuxt-link to="/tilbehor">Tilbehør</nuxt-link></li>
@@ -83,13 +83,13 @@ export default {
       margin-left: 16.5rem;
 
       &__logo{
-        height: 2.6rem;
+        height: 2.4rem;
         margin-right: $gutter / 2;
         
       }
 
       &__stars{
-        height: 2.2rem;
+        height: 2rem;
       }
 
     }

@@ -72,6 +72,7 @@ export default {
             font-size: 2.2rem;
             display: inline-block;
             position: relative;
+            text-transform: none;
 
             &:after{
                 content: "";

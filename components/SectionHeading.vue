@@ -11,7 +11,7 @@ export default {
     name: 'SectionHeading',
     props: {
         heading: String, 
-        text: String,
+        text: String
     },
 
 }
@@ -25,8 +25,8 @@ export default {
 
   .title{
     position: relative;
-    text-transform: uppercase;
     font-weight: 700;
+    margin: 0;
     &:after{
       content: "";
       width: 5rem;

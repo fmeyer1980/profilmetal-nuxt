@@ -1,5 +1,5 @@
 <template>
-    <section class="about pt-8 pb-8">
+    <section class="about pt-9 pb-9">
         <div class="container">
             <SectionHeading heading="Lidt om os"/>
             <div class="wrapper">
@@ -67,8 +67,17 @@ export default {
         
     }
 
+    .about__item:hover:before{
+        /* background-color: rgba($primary, .95); */
+        opacity: 0;
+    }
     .about__item:hover:after{
-        background-color: rgba($primary, .95);
+        /* background-color: rgba($primary, .95); */
+        opacity: 1;
+    }
+
+    .wrapper:hover .about__item:not(:hover){
+        opacity: .3;
     }
 
     &__item{
@@ -78,6 +87,7 @@ export default {
         align-items: flex-end;
         padding: 4rem;
         color: currentColor;
+        transition: opacity .2s ease-in;
 
         &:hover{
             color: $black;
@@ -90,17 +100,27 @@ export default {
         }
 
 
-        &:after{
+        &:after, &:before{
             content: "";
             width: 100%;
             height: 100%;
             position: absolute;
             top: 0;
             left: 0;
-            background-color: rgba($black, .6);
+            /* background-color: rgba($black, .6); */
             z-index: 1;
             transition: all .2s ease-in;
         }
+
+        &:before{
+            background-image: linear-gradient(to bottom, rgba($black, .1), rgba($black, 1));
+        }
+
+        &:after{
+            background-image: linear-gradient(to bottom, rgba($primary, .9), rgba($primary, 1));
+            opacity: 0;
+        }
+        
 
         .content-wrapper{
             position: relative;
@@ -110,7 +130,6 @@ export default {
 
 
             .title{
-                text-transform: uppercase;
                 flex-shrink: 1;
                 flex-grow: 1;
                 margin: 0;
@@ -146,24 +165,21 @@ export default {
     .box-1{
         grid-column: 1 / 3;
         grid-row: 1 / 3;
-        &:after{
-            background-color: rgba($black, .3);
-        }
     }
 
     .box-2{
         grid-column: 3 / 5;
         grid-row: 1 / 1;
-        &:after{
-            background-color: rgba($black, .7);
+        &:before{
+            background-image: linear-gradient(to bottom, rgba($black, .5), rgba($black, 1));
         }
     }
 
     .box-3{
         grid-column: 3 / 4;
         grid-row: 2 / 2;
-        &:after{
-            background-color: rgba($black, .7);
+        &:before{
+           background-image: linear-gradient(to bottom, rgba($black, .5), rgba($black, 1));
         }
         
     }
