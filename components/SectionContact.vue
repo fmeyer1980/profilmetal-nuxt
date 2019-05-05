@@ -3,7 +3,7 @@
         <div class="container">
             <div class="text-content pr-4">
                 <div class="h3 mt-0 mb-0">Kan vi hjælpe dig med noget?</div>
-                <p class="mt-0 mb-0">Udfyld formularen, eller kontakt os på telefon 5663 0222.</p>
+                <p class="mt-0 mb-0">Udfyld formularen, eller kontakt os på telefon <a target="_blank" href="">5663 0222</a></p>
             </div>
             <div class="contact-form">
                 <form action="">
@@ -42,6 +42,11 @@ export default {
 
     .text-content{
         flex-shrink: 0;
+
+        a{
+            color: currentColor;
+            font-weight: 700;
+        }
         
     }
 
