@@ -9,8 +9,9 @@
                         <img src="../assets/images/trustpilot-stars.png" alt="Trustpilot stars">
                     </div>
                 </div>
+
                 <div class="right">
-                    <carousel navigationEnabled="true">
+                    <carousel>
                         <slide>
                             <div class="item">
                                 <div class="item__top">
@@ -61,11 +62,15 @@
 export default {
 
 name: 'Trustpilot',
-    // data(){
-    //     return{
-    //         breakpointss: "[[320, 1], [576, 2], [960, 3]]"
-    //     }
-    // }
+    data(){
+        
+        return{
+            breakpointss: "[[320, 1], [576, 2], [960, 3]]"
+        }
+    },
+    props:{
+
+    }
 }
 </script>
 
