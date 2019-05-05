@@ -60,6 +60,12 @@
 
 export default {
 
+name: 'Trustpilot',
+    // data(){
+    //     return{
+    //         breakpointss: "[[320, 1], [576, 2], [960, 3]]"
+    //     }
+    // }
 }
 </script>
 
