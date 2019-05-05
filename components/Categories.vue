@@ -1,7 +1,7 @@
 <template>
     <section class="categories">
         <div class="container">
-            <carousel>
+            <carousel data-name="MySlideName">
                 <slide>
                     <div class="categories__item">
                         <img class="categories__item__image" src="~/assets/images/category-img-1.jpg" />

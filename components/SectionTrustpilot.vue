@@ -11,7 +11,7 @@
                 </div>
 
                 <div class="right">
-                    <carousel>
+                    <carousel data-name="MySlideNameNy">
                         <slide>
                             <div class="item">
                                 <div class="item__top">
