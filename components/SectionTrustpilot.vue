@@ -11,47 +11,40 @@
                 </div>
 
                 <div class="right">
-                    <carousel data-name="MySlideNameNy">
-                        <slide>
-                            <div class="item">
-                                <div class="item__top">
-                                    <p class="heading h4">Leveret til aftalt tid</p>
-                                    <img src="../assets/images/trustpilot-stars.png" alt="Trustpilot stars">
-                                </div>
-                                <p class="text opc-7">Leveret til aftalt tid, og rigtig god oplevelse med kunde service, jeg havde fåe...</p>
-                                <ul>
-                                    <li>Erling</li>
-                                    <li>28 timer siden</li>
-                                </ul>
+                        <div class="item">
+                            <div class="item__top">
+                                <p class="heading h4">Leveret til aftalt tid</p>
+                                <img src="../assets/images/trustpilot-stars.png" alt="Trustpilot stars">
                             </div>
-                        </slide>
-                        <slide>
-                            <div class="item">
-                                <div class="item__top">
-                                    <p class="heading h4">Leveret til aftalt tid</p>
-                                    <img src="../assets/images/trustpilot-stars.png" alt="Trustpilot stars">
-                                </div>
-                                <p class="text opc-7">Leveret til aftalt tid, og rigtig god oplevelse med kunde service, jeg havde fåe...</p>
-                                <ul>
-                                    <li>Erling</li>
-                                    <li>28 timer siden</li>
-                                </ul>
+                            <p class="text opc-7">Leveret til aftalt tid, og rigtig god oplevelse med kunde service, jeg havde fåe...</p>
+                            <ul>
+                                <li>Erling</li>
+                                <li>28 timer siden</li>
+                            </ul>
+                        </div>
+                        <div class="item">
+                            <div class="item__top">
+                                <p class="heading h4">Leveret til aftalt tid</p>
+                                <img src="../assets/images/trustpilot-stars.png" alt="Trustpilot stars">
                             </div>
-                        </slide>
-                        <slide>
-                            <div class="item">
-                                <div class="item__top">
-                                    <p class="heading h4">Leveret til aftalt tid</p>
-                                    <img src="../assets/images/trustpilot-stars.png" alt="Trustpilot stars">
-                                </div>
-                                <p class="text opc-7">Leveret til aftalt tid, og rigtig god oplevelse med kunde service, jeg havde fåe...</p>
-                                <ul>
-                                    <li>Erling</li>
-                                    <li>28 timer siden</li>
-                                </ul>
+                            <p class="text opc-7">Leveret til aftalt tid, og rigtig god oplevelse med kunde service, jeg havde fåe...</p>
+                            <ul>
+                                <li>Erling</li>
+                                <li>28 timer siden</li>
+                            </ul>
+                        </div>
+
+                        <!-- <div class="item">
+                            <div class="item__top">
+                                <p class="heading h4">Leveret til aftalt tid</p>
+                                <img src="../assets/images/trustpilot-stars.png" alt="Trustpilot stars">
                             </div>
-                        </slide>
-                    </carousel>
+                            <p class="text opc-7">Leveret til aftalt tid, og rigtig god oplevelse med kunde service, jeg havde fåe...</p>
+                            <ul>
+                                <li>Erling</li>
+                                <li>28 timer siden</li>
+                            </ul>
+                        </div> -->
                 </div>
             </div>
     </section>
@@ -61,107 +54,15 @@
 
 export default {
 
-name: 'Trustpilot',
-    data(){
-        
-        return{
-            breakpointss: "[[320, 1], [576, 2], [960, 3]]"
-        }
-    },
-    props:{
-
-    }
 }
+
 </script>
-
-<style lang="scss">
-@import '~/assets/css/global.scss';
-
-.trustpilot{
-
-     .VueCarousel{
-        width: calc(100% - 14rem);
-
-        &-wrapper{
-            
-           
-        }
-
-        &-pagination{
-            display: none !important;
-        }
-
-       
-        &-navigation{
-            height: 100%;
-            position: absolute;
-            top: 0;
-            right: -14rem;
-            width: 12rem;
-            display: flex;
-
-            &--disabled{
-                background-color: $dark-gray-light !important;
-                opacity: .6 !important;
-                
-                &:after{
-                    opacity: .3;
-                }
-            }
-
-            &-button{
-                position: relative;
-                width: 50% !important;
-                height: 6rem !important;
-                background-color: $primary;
-                margin: 0 !important;
-                padding: 0 !important;
-                border-radius: 0;
-                opacity: 1;
-                overflow: hidden;
-                text-indent: 40rem;
-                top: 50%;
-                left: auto;
-                transform: translateY(-50%);
-                background-repeat: no-repeat;
-                background-position: 50%;
-                background-size: 1rem;
-            }
-
-            &-prev{
-                background-image: url('../assets/images/arrow-light.svg');
-            }
-
-            &-next{
-                background-image: url('../assets/images/arrow-light-right.svg');
-                
-            }
-
-            
-        }
-
-        &-slide{
-            width: 100%;
-            padding-right: 4rem;
-        }
-
-        .item{
-            border-left: solid 1px rgba($white, .05);
-            padding-left: 4rem;
-            width: 100%;
-        }
-    }
-}
-
-</style>
-
 
 
 <style lang="scss" scoped>
 @import '~/assets/css/global.scss';
 
 
-    
 
 .trustpilot{
     background-color: #232323;
@@ -178,11 +79,8 @@ name: 'Trustpilot',
     .left{
         display: flex;
         width: 35%;
-        margin-right: 5rem;
+        margin-right: 3rem;
         height: 13rem;
-        @media (max-width: $screen-lg) {
-            width: 50%;
-        }
 
         .icon{
             margin-right: $gutter;
@@ -197,6 +95,9 @@ name: 'Trustpilot',
             .heading{
                 margin: 0;
                 margin-bottom: .3em;
+                @media (max-width: $screen-lg) {
+                    font-size: 2rem;
+                }
             }
 
             .text{
@@ -209,8 +110,11 @@ name: 'Trustpilot',
             }
 
             img{
-                width: 13rem;
-                height: auto
+                width: 12rem;
+                height: auto;
+                @media (max-width: $screen-lg) {
+                    width: 10rem;
+                }
             }
         }
     }
@@ -218,13 +122,15 @@ name: 'Trustpilot',
     .right{
         width: 65%;
         flex-grow: 1;
-        @media (max-width: $screen-lg) {
-            width: 50%;
-        }
-
-    
+        display: flex;
 
         .item{
+            border-left: solid 1px rgba($white, .05);
+            padding: 0 4rem;
+            width: 100%;
+            &:last-child{
+                padding-right: 0;
+            }
 
             &__top{
                 display: flex;
