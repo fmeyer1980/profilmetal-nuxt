@@ -1,7 +1,7 @@
 <template>
     <section class="categories">
         <div class="container">
-            <carousel :perPage="3" :navigationEnabled="true">
+            <carousel perPage="3" navigationEnabled="true">
                 <slide>
                     <div class="categories__item">
                         <img class="categories__item__image" src="~/assets/images/category-img-1.jpg" />

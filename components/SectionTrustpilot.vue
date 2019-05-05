@@ -10,7 +10,7 @@
                     </div>
                 </div>
                 <div class="right">
-                    <carousel :perPageCustom="[[320, 1], [1200, 2]]" :navigationEnabled="true">
+                    <carousel navigationEnabled="true">
                         <slide>
                             <div class="item">
                                 <div class="item__top">
