@@ -5,7 +5,7 @@
     <Offers />
     <Products />
     <AboutUs />
-    <SectionTrustpilot />
+    <!-- <SectionTrustpilot /> -->
     <SectionContact />
   </div>
 </template>
