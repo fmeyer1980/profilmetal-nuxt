@@ -41,13 +41,13 @@
                         <slide>
                             <div class="item">
                                 <div class="item__top">
-                                    <p class="heading h4">Leveret til aftalt tid</p>
+                                    <p class="heading h4">Rigtig god service</p>
                                     <img src="../assets/images/trustpilot-stars.png" alt="Trustpilot stars">
                                 </div>
-                                <p class="text opc-7">Leveret til aftalt tid, og rigtig god oplevelse med kunde service, jeg havde fåe...</p>
+                                <p class="text opc-7">Rigtig god service, meget behjælpelig med bestillingen mht. mål og antal af vare...</p>
                                 <ul>
-                                    <li>Erling</li>
-                                    <li>28 timer siden</li>
+                                    <li>Brian</li>
+                                    <li>24 april</li>
                                 </ul>
                             </div>
                         </slide>
