@@ -35,7 +35,6 @@ $max_font: 10px;
 }
 
 
-
 $gutter: 3rem;
 
 *,
@@ -124,4 +123,10 @@ a{
 
 main{
   @include container;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+input {
+  border-radius: 0;
 }

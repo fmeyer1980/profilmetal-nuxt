@@ -99,35 +99,19 @@
                 opacity: 1;
                 overflow: hidden;
                 text-indent: 40rem;
-                top: 0;
                 left: auto;
-                transform: translateY(0);
-                transform: translateX(0);
-
-                &:after{
-                    content: "";
-                    background-repeat: no-repeat;
-                    background-size: 10px;
-                    width: 20px;
-                    height: 20px;
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%)
-                }
+                transform: translateY(-50%);
+                background-repeat: no-repeat;
+                background-position: 50%;
+                background-size: 1rem;
             }
 
             &-prev{
-                &:after{
-                    background-image: url('../assets/images/arrow-light.svg');
-                }
+                background-image: url('../assets/images/arrow-light.svg');
             }
 
             &-next{
-                &:after{
-                    background-image: url('../assets/images/arrow-light-right.svg');
-                }
-                
+                background-image: url('../assets/images/arrow-light-right.svg'); 
             }
 
             

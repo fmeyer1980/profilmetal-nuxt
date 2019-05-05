@@ -1,11 +1,12 @@
 <template>
-  <div class="layout">
+  <div class="page">
     <Hero />
     <Categories />
     <Offers />
     <Products />
     <AboutUs />
     <SectionTrustpilot />
+    <SectionContact />
   </div>
 </template>
 
@@ -16,6 +17,7 @@ import Offers from '~/components/Offers.vue'
 import Products from '~/components/Products.vue'
 import AboutUs from '~/components/AboutUs.vue'
 import SectionTrustpilot from '~/components/SectionTrustpilot.vue'
+import SectionContact from '~/components/SectionContact.vue'
 
 export default {
   components: {
@@ -24,7 +26,8 @@ export default {
     Offers,
     Products,
     AboutUs,
-    SectionTrustpilot
+    SectionTrustpilot,
+    SectionContact
   },
   metaInfo: {
     title: 'Welcome to my blog'

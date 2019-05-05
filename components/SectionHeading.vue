@@ -36,6 +36,7 @@ export default {
       left: 50%;
       bottom: -1.5rem;
       transform: translate(-50%);
+      opacity: .85;
     }
   } 
 }

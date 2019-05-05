@@ -1,5 +1,5 @@
 <template>
-<div class="layout">
+<div class="page">
   <TopBanner heading="Nye og brugte Tagplader" text="Find dine tagplader her." image="hero-img.jpg" />
     <main>
       <h1>About me</h1>

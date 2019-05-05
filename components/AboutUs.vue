@@ -88,6 +88,7 @@ export default {
         padding: 4rem;
         color: currentColor;
         transition: opacity .2s ease-in;
+        overflow: hidden;
 
         &:hover{
             color: $black;
