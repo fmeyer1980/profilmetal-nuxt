@@ -45,7 +45,6 @@ export default {
 
         a{
             color: currentColor;
-            font-weight: 700;
         }
         
     }
